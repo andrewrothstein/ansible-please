@@ -2,7 +2,7 @@ andrewrothstein.please
 =========
 [![Build Status](https://travis-ci.org/andrewrothstein/ansible-please.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-please)
 
-Installs [https://please.build/](Please).
+Installs [Please](https://please.build/)
 
 Requirements
 ------------

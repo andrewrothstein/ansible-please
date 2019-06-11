@@ -1,6 +1,6 @@
 ---
 # defaults file for please
-please_ver: '13.4.8'
+please_ver: '13.8.2'
 please_mirror: https://github.com/thought-machine/please/releases/download
 please_platform: linux_amd64
 please_checksums:
@@ -9,5 +9,10 @@ please_checksums:
     cli: sha256:00215e3dca85ed93b7d45555f254b4f43b40bfc3d593a99aa0e72a1baa013ad3
     # https://github.com/thought-machine/please/releases/download/v13.4.8/please_servers_13.4.8_linux_amd64.tar.gz
     servers: sha256:c27d5965b150b529ed755be6cbfed589827cce31abd54b763506fca6f9a56ed2
+  '13.8.2':
+    # https://github.com/thought-machine/please/releases/download/v13.8.2/please_13.8.2_linux_amd64.tar.gz
+    cli: sha256:0ca712ddc864b62e3eb31d88b08af90a87a512a6aac19495e29f8c68c4613b79
+    # https://github.com/thought-machine/please/releases/download/v13.8.2/please_servers_13.8.2_linux_amd64.tar.gz
+    servers: sha256:41740a69b24b16546d2e76ef51b5b1030b394ab92529edbd577533db439536a3
 
 please_install_parent_dir: /usr/local
