@@ -1,10 +1,8 @@
 ---
 # vars file for please
-please_cli_tgz: please_{{ please_ver }}_{{ please_platform }}.tar.gz
-please_servers_tgz: please_servers_{{ please_ver }}_{{ please_platform }}.tar.gz
-
-please_cli_url: '{{ please_mirror }}/v{{ please_ver }}/{{ please_cli_tgz }}'
-please_servers_url: '{{ please_mirror }}/v{{ please_ver }}/{{ please_servers_tgz }}'
+please_platform: '{{ please_os }}_{{ please_arch }}'
+please_tgz: please_{{ please_ver }}_{{ please_platform }}.tar.gz
+please_url: '{{ please_mirror }}/v{{ please_ver }}/{{ please_tgz }}'
 
 please_install_dir: '{{ please_install_parent_dir }}/please-{{ please_ver }}'
 please_link_dir: '{{ please_install_parent_dir }}/please'

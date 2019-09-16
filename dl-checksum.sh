@@ -1,21 +1,23 @@
 #!/usr/bin/env sh
-VER=13.8.2
+VER=${1:-14.1.3}
 DIR=~/Downloads
 MIRROR=https://github.com/thought-machine/please/releases/download/v${VER}
 
 dl()
 {
-    LABEL=$1
-    APP=$2
-    OS=$3
-    PLATFORM=$4
-    FILE=${APP}_${VER}_${OS}_${PLATFORM}.tar.gz
-    URL=$MIRROR/$FILE
-    wget --quiet -O $DIR/$FILE $URL
-    printf "# %s\n%s: sha256:%s\n" $URL $LABEL `sha256sum $DIR/$FILE | awk '{print $1}'`
+    local os=$1
+    local arch=$2
+    local platform=${os}_${arch}
+    local file=please_${VER}_${platform}.tar.gz
+    local shafile=$file.sha256
+    local url=$MIRROR/$shafile
+    printf "    # %s\n" $url
+    printf "    %s: sha256:%s\n" $platform `curl -sSL $url | awk '{print $1}'`
 }
 
-dl cli please linux amd64
-dl servers please_servers linux amd64
+printf "  '%s':\n" $VER
+dl darwin amd64
+dl linux amd64
+
 
 

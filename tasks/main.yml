@@ -19,22 +19,14 @@
 
 - when: not please_bin.stat.exists
   block:
-    - name: download cli...
+    - name: download...
       become: yes
       become_user: root
       get_url:
-        url: '{{ please_cli_url }}'
-        dest: /tmp/{{ please_cli_tgz }}
+        url: '{{ please_url }}'
+        dest: /tmp/{{ please_tgz }}
         mode: 0644
-        checksum: '{{ please_checksums[please_ver]["cli"] }}'
-    - name: download servers...
-      become: yes
-      become_user: root
-      get_url:
-        url: '{{ please_servers_url }}'
-        dest: /tmp/{{ please_servers_tgz }}
-        mode: 0644
-        checksum: '{{ please_checksums[please_ver]["servers"] }}'
+        checksum: '{{ please_checksums[please_ver][please_platform] }}'
     - name: make install dir
       become: yes
       become_user: root
@@ -42,31 +34,20 @@
         path: '{{ please_install_dir }}'
         state: directory
         mode: 0755
-    - name: unarchive cli tgz...
+    - name: unarchive tgz...
       become: yes
       become_user: root
       unarchive:
         remote_src: yes
-        src: /tmp/{{ please_cli_tgz }}
+        src: /tmp/{{ please_tgz }}
         dest: '{{ please_install_dir }}'
-        creates: '{{ please_install_dir }}/please/please'
-    - name: unarchive servers tgz...
-      become: yes
-      become_user: root
-      unarchive:
-        remote_src: yes
-        src: /tmp/{{ please_servers_tgz }}
-        dest: '{{ please_install_dir }}'
-        creates: '{{ please_install_dir }}/please/rpc_cache_server'
+        creates: '{{ please_install_dir }}/please'
   always:
     - name: delete tgzs...
       become: yes
       become_user: root
-      with_items:
-        - '{{ please_cli_tgz }}'
-        - '{{ please_servers_tgz }}'
       file:
-        path: '{{ item }}'
+        path: '{{ please_tgz }}'
         state: absent
 - name: link please dir
   become: yes
