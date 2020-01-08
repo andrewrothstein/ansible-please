@@ -1,35 +1,39 @@
 ---
 # defaults file for please
-please_ver: '14.1.3'
+please_ver: '14.2.1'
 please_mirror: https://github.com/thought-machine/please/releases/download
 please_os: linux
 please_arch: amd64
+please_install_parent_dir: /usr/local
 
 please_checksums:
-  '14.1.3':
-    # https://github.com/thought-machine/please/releases/download/v14.1.3/please_14.1.3_darwin_amd64.tar.gz.sha256
-    darwin_amd64: sha256:21f892b4c471237255d2e36d00ee69f53d75bcb4f43720fe527c04871194b0e2
-    # https://github.com/thought-machine/please/releases/download/v14.1.3/please_14.1.3_linux_amd64.tar.gz.sha256
-    linux_amd64: sha256:cdd31d7945f565b7eb6b7c203a36b82790fa2025b656052a92319d0970c3731c
-  '14.1.2':
-    # https://github.com/thought-machine/please/releases/download/v14.1.2/please_14.1.2_darwin_amd64.tar.gz.sha256
-    darwin_amd64: sha256:c9791e087771a5ce2ae52d002e9b02e7b2f818124bc1e16c1444b0acd912788b
-    # https://github.com/thought-machine/please/releases/download/v14.1.2/please_14.1.2_linux_amd64.tar.gz.sha256
-    linux_amd64: sha256:23b7b5e9e5d90f1b2d83e094cc219e08ac62c29dd132158bd580ad77f396c6e1
-  '14.1.1':
-    # https://github.com/thought-machine/please/releases/download/v14.1.1/please_14.1.1_darwin_amd64.tar.gz.sha256
-    darwin_amd64: sha256:9083550ba7a25d3c2e861e9add9d36d9c989d80ae2fbe15c579d4b3b2d8174b9
-    # https://github.com/thought-machine/please/releases/download/v14.1.1/please_14.1.1_linux_amd64.tar.gz.sha256
-    linux_amd64: sha256:8704bdc181d32ebb8b5163c60aa3d0cc115961daaddc360d2a6aafa32753adcf
-  '14.1.0':
-    # https://github.com/thought-machine/please/releases/download/v14.1.0/please_14.1.0_darwin_amd64.tar.gz.sha256
-    darwin_amd64: sha256:cd9f58be9be669134ee80ea3c86514d9b9254bd871d39ac1f65c43c2fd519f64
-    # https://github.com/thought-machine/please/releases/download/v14.1.0/please_14.1.0_linux_amd64.tar.gz.sha256
-    linux_amd64: sha256:ffaddafc8261869c305ad1bf33fa38db804d107574c238897004df27a17e0126
   '14.0.0':
     # https://github.com/thought-machine/please/releases/download/v14.0.0/please_14.0.0_darwin_amd64.tar.gz.sha256
     darwin_amd64: sha256:4608790df0ab09c8c937b9a32f349abcb73eb2c2add69b40d5911472fcb732c8
     # https://github.com/thought-machine/please/releases/download/v14.0.0/please_14.0.0_linux_amd64.tar.gz.sha256
     linux_amd64: sha256:6e07ef4f164331bbfc712206fde3d0642429b2ef44c2eb4557182ff376165a5c
-
-please_install_parent_dir: /usr/local
+  '14.1.0':
+    # https://github.com/thought-machine/please/releases/download/v14.1.0/please_14.1.0_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:cd9f58be9be669134ee80ea3c86514d9b9254bd871d39ac1f65c43c2fd519f64
+    # https://github.com/thought-machine/please/releases/download/v14.1.0/please_14.1.0_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:ffaddafc8261869c305ad1bf33fa38db804d107574c238897004df27a17e0126
+  '14.1.1':
+    # https://github.com/thought-machine/please/releases/download/v14.1.1/please_14.1.1_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:9083550ba7a25d3c2e861e9add9d36d9c989d80ae2fbe15c579d4b3b2d8174b9
+    # https://github.com/thought-machine/please/releases/download/v14.1.1/please_14.1.1_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:8704bdc181d32ebb8b5163c60aa3d0cc115961daaddc360d2a6aafa32753adcf
+  '14.1.2':
+    # https://github.com/thought-machine/please/releases/download/v14.1.2/please_14.1.2_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:c9791e087771a5ce2ae52d002e9b02e7b2f818124bc1e16c1444b0acd912788b
+    # https://github.com/thought-machine/please/releases/download/v14.1.2/please_14.1.2_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:23b7b5e9e5d90f1b2d83e094cc219e08ac62c29dd132158bd580ad77f396c6e1
+  '14.1.3':
+    # https://github.com/thought-machine/please/releases/download/v14.1.3/please_14.1.3_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:21f892b4c471237255d2e36d00ee69f53d75bcb4f43720fe527c04871194b0e2
+    # https://github.com/thought-machine/please/releases/download/v14.1.3/please_14.1.3_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:cdd31d7945f565b7eb6b7c203a36b82790fa2025b656052a92319d0970c3731c
+  '14.2.1':
+    # https://github.com/thought-machine/please/releases/download/v14.2.1/please_14.2.1_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:f3156c76d89c549069ba9992fdc6f6facc793a3e2a2a4faeafb377ab6ecd15b3
+    # https://github.com/thought-machine/please/releases/download/v14.2.1/please_14.2.1_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:48d9dc92af073fd2130e715e63d472d7517b735bc0036a9add6ebb255167736e

@@ -1,23 +1,25 @@
 #!/usr/bin/env sh
-VER=${1:-14.1.3}
 DIR=~/Downloads
-MIRROR=https://github.com/thought-machine/please/releases/download/v${VER}
+MIRROR=https://github.com/thought-machine/please/releases/download
 
 dl()
 {
-    local os=$1
-    local arch=$2
-    local platform=${os}_${arch}
-    local file=please_${VER}_${platform}.tar.gz
-    local shafile=$file.sha256
-    local url=$MIRROR/$shafile
+    local ver=$1
+    local os=$2
+    local arch=$3
+    local platform="${os}_${arch}"
+    local file=please_${ver}_${platform}.tar.gz
+    local shafile="${file}.sha256"
+    local url=$MIRROR/v$ver/$shafile
     printf "    # %s\n" $url
-    printf "    %s: sha256:%s\n" $platform `curl -sSL $url | awk '{print $1}'`
+    printf "    %s: sha256:%s\n" $platform $(curl -sSL $url | awk '{print $1}')
 }
 
-printf "  '%s':\n" $VER
-dl darwin amd64
-dl linux amd64
+dl_ver() {
+    local ver=$1
+    printf "  '%s':\n" $ver
+    dl $ver darwin amd64
+    dl $ver linux amd64
+}
 
-
-
+dl_ver ${1:-14.2.1}
