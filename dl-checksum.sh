@@ -22,4 +22,4 @@ dl_ver() {
     dl $ver linux amd64
 }
 
-dl_ver ${1:-14.2.1}
+dl_ver ${1:-14.3.1}
