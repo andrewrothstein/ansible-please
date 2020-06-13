@@ -1,6 +1,6 @@
 ---
 # defaults file for please
-please_ver: 14.5.1
+please_ver: 14.5.3
 please_mirror: https://github.com/thought-machine/please/releases/download
 please_os: linux
 please_arch: amd64
@@ -112,3 +112,8 @@ please_checksums:
     darwin_amd64: sha256:baf2b92a803d0173495a363d72bc52a5f60a0b3f99ac74f2a4b41bb16687cba9
     # https://github.com/thought-machine/please/releases/download/v14.5.2/please_14.5.2_linux_amd64.tar.gz.sha256
     linux_amd64: sha256:7aca80e42cad7482c0f70be9331af819d7bad407635750d07e16f443bca78b16
+  '14.5.3':
+    # https://github.com/thought-machine/please/releases/download/v14.5.3/please_14.5.3_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:c2df5a2e4f0613cf8fb9213a64020f308431db1017cd110f3829ac0287a04bc9
+    # https://github.com/thought-machine/please/releases/download/v14.5.3/please_14.5.3_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:61db5a540dcee7ea1aa500e565768a08d12e6a41c8d04fe068e02f4e0e2802e8
