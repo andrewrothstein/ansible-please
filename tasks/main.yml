@@ -9,7 +9,7 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: check for installation...
+- name: check for installation in {{ please_install_dir }}
   become: yes
   become_user: root
   stat:
@@ -24,9 +24,9 @@
       become_user: root
       get_url:
         url: '{{ please_url }}'
-        dest: /tmp/{{ please_tgz }}
+        dest: '{{ please_tmp_tgz }}'
         mode: 0644
-        checksum: '{{ please_checksums[please_ver][please_platform] }}'
+        checksum: '{{ please_checksum }}'
     - name: make install dir
       become: yes
       become_user: root
@@ -34,29 +34,29 @@
         path: '{{ please_install_dir }}'
         state: directory
         mode: 0755
-    - name: unarchive tgz...
+    - name: unarchiving {{ please_tmp_tgz }} to  {{ please_install_dir }}
       become: yes
       become_user: root
       unarchive:
         remote_src: yes
-        src: /tmp/{{ please_tgz }}
+        src: '{{ please_tmp_tgz }}'
         dest: '{{ please_install_dir }}'
-        creates: '{{ please_install_dir }}/please'
+        creates: '{{ please_install_subdir }}'
   always:
-    - name: delete tgzs...
+    - name: rm {{ please_tmp_tgz }}
       become: yes
       become_user: root
       file:
-        path: '{{ please_tgz }}'
+        path: '{{ please_tmp_tgz }}'
         state: absent
-- name: link please dir
+- name: linking {{ please_link_dir }} to {{ please_install_subdir }}
   become: yes
   become_user: root
   file:
-    src: '{{ please_install_dir }}/please'
+    src: '{{ please_install_subdir }}'
     dest: '{{ please_link_dir }}'
     state: link
-- name: add please to default shell...
+- name: adding please to default shell...
   become: yes
   become_user: root
   with_items:

@@ -2,7 +2,10 @@
 # vars file for please
 please_platform: '{{ please_os }}_{{ please_arch }}'
 please_tgz: please_{{ please_ver }}_{{ please_platform }}.tar.gz
+please_tmp_tgz: /tmp/{{ please_tgz }}
 please_url: '{{ please_mirror }}/v{{ please_ver }}/{{ please_tgz }}'
+please_checksum: '{{ please_checksums[please_ver][please_platform] }}'
 
 please_install_dir: '{{ please_install_parent_dir }}/please-{{ please_ver }}'
+please_install_subdir: '{{ please_install_dir }}/please'
 please_link_dir: '{{ please_install_parent_dir }}/please'
