@@ -19,7 +19,7 @@
 
 - when: not please_bin.stat.exists
   block:
-    - name: download...
+    - name: downloading {{ please_url }}
       become: yes
       become_user: root
       get_url:
@@ -27,7 +27,7 @@
         dest: '{{ please_tmp_tgz }}'
         mode: 0644
         checksum: '{{ please_checksum }}'
-    - name: make install dir
+    - name: mkdir '{{ please_install_dir }}'
       become: yes
       become_user: root
       file:
