@@ -27,7 +27,7 @@
         dest: '{{ please_tmp_tgz }}'
         mode: 0644
         checksum: '{{ please_checksum }}'
-    - name: mkdir '{{ please_install_dir }}'
+    - name: mkdir {{ please_install_dir }}
       become: yes
       become_user: root
       file:
