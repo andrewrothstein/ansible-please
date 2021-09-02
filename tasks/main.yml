@@ -10,7 +10,7 @@
       paths:
         - '{{ role_path }}/vars'
 - name: check for installation in {{ please_install_dir }}
-  become: yes
+  become: true
   become_user: root
   stat:
     path: '{{ please_install_dir }}'
@@ -20,7 +20,7 @@
 - when: not please_bin.stat.exists
   block:
     - name: downloading {{ please_url }}
-      become: yes
+      become: true
       become_user: root
       get_url:
         url: '{{ please_url }}'
@@ -28,36 +28,36 @@
         mode: 0644
         checksum: '{{ please_checksum }}'
     - name: mkdir {{ please_install_dir }}
-      become: yes
+      become: true
       become_user: root
       file:
         path: '{{ please_install_dir }}'
         state: directory
         mode: 0755
     - name: unarchiving {{ please_tmp_tgz }} to  {{ please_install_dir }}
-      become: yes
+      become: true
       become_user: root
       unarchive:
-        remote_src: yes
+        remote_src: true
         src: '{{ please_tmp_tgz }}'
         dest: '{{ please_install_dir }}'
         creates: '{{ please_install_subdir }}'
   always:
     - name: rm {{ please_tmp_tgz }}
-      become: yes
+      become: true
       become_user: root
       file:
         path: '{{ please_tmp_tgz }}'
         state: absent
 - name: linking {{ please_link_dir }} to {{ please_install_subdir }}
-  become: yes
+  become: true
   become_user: root
   file:
     src: '{{ please_install_subdir }}'
     dest: '{{ please_link_dir }}'
     state: link
 - name: adding please to default shell...
-  become: yes
+  become: true
   become_user: root
   with_items:
     - f: please.sh
