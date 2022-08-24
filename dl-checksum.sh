@@ -20,7 +20,9 @@ dl_ver() {
     local ver=$1
     printf "  '%s':\n" $ver
     dl $ver darwin amd64
+    dl $ver darwin arm64
+    dl $ver freebsd amd64
     dl $ver linux amd64
 }
 
-dl_ver ${1:-16.6.1}
+dl_ver ${1:-16.22.0}
