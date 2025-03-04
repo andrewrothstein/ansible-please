@@ -1,8 +1,9 @@
 ---
-- include_role:
+- name: Installing andrewrothstein.unarchivedeps
+  ansible.builtin.include_role:
     name: andrewrothstein.unarchivedeps
-- name: resolve platform specific vars
-  include_vars: '{{ item }}'
+- name: Resolve platform specific vars
+  ansible.builtin.include_vars: '{{ item }}'
   with_first_found:
     - files:
         - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
@@ -11,60 +12,61 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: check for installation in {{ please_install_dir }}
+- name: Check for installation in {{ please_install_dir }}
   become: true
   become_user: root
-  stat:
+  ansible.builtin.stat:
     path: '{{ please_install_dir }}'
   changed_when: false
   register: please_bin
 
-- when: not please_bin.stat.exists
+- name: Downloading and installing please
+  when: not please_bin.stat.exists
   block:
-    - name: downloading {{ please_url }}
+    - name: Downloading {{ please_url }}
       become: true
       become_user: root
-      get_url:
+      ansible.builtin.get_url:
         url: '{{ please_url }}'
         dest: '{{ please_tmp_tgz }}'
-        mode: 0644
+        mode: '644'
         checksum: '{{ please_checksum }}'
-    - name: mkdir {{ please_install_dir }}
+    - name: Mkdir {{ please_install_dir }}
       become: true
       become_user: root
-      file:
+      ansible.builtin.file:
         path: '{{ please_install_dir }}'
         state: directory
-        mode: 0755
-    - name: unarchiving {{ please_tmp_tgz }} to  {{ please_install_dir }}
+        mode: '755'
+    - name: Unarchiving {{ please_tmp_tgz }} to {{ please_install_dir }}
       become: true
       become_user: root
-      unarchive:
+      ansible.builtin.unarchive:
         remote_src: true
         src: '{{ please_tmp_tgz }}'
         dest: '{{ please_install_dir }}'
         creates: '{{ please_install_subdir }}'
   always:
-    - name: rm {{ please_tmp_tgz }}
+    - name: Rm -f {{ please_tmp_tgz }}
       become: true
       become_user: root
-      file:
+      ansible.builtin.file:
         path: '{{ please_tmp_tgz }}'
         state: absent
-- name: linking {{ please_link_dir }} to {{ please_install_subdir }}
+- name: Linking {{ please_link_dir }} to {{ please_install_subdir }}
   become: true
   become_user: root
-  file:
+  ansible.builtin.file:
     src: '{{ please_install_subdir }}'
     dest: '{{ please_link_dir }}'
     state: link
-- name: adding please to default shell...
+- name: Adding please to default shell...
   become: true
   become_user: root
   with_items:
     - f: please.sh
       d: /etc/profile.d
-  template:
+  ansible.builtin.template:
     src: '{{ item.f }}.j2'
     dest: '{{ item.d }}/{{ item.f }}'
-    mode: '{{ item.m | default("0644") }}'
+    mode: '{{ item.m | default("644") }}'

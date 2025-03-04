@@ -1,6 +1,6 @@
 ---
 # defaults file for please
-please_ver: 17.3.0
+please_ver: 17.4.0
 please_mirror: https://github.com/thought-machine/please/releases/download
 please_arch_map:
   aarch64: arm64
@@ -306,3 +306,309 @@ please_checksums:
     freebsd_amd64: sha256:a6654a633c9f4d6c63a0fc188ad1b6022aead1ab29b45e7f4b1f97f7a628249f
     # https://github.com/thought-machine/please/releases/download/v17.3.0/please_17.3.0_linux_amd64.tar.gz.sha256
     linux_amd64: sha256:0358286445446d4ba79b0e56b74949329f747fe070c1ee023e768a32deb77b30
+  '17.4.0':
+    # https://github.com/thought-machine/please/releases/download/v17.4.0/please_17.4.0_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:9f4fd5ec0c9b530d1ec1be6b3efabdecd39469c4fce50ae7ef0397e26b20e198
+    # https://github.com/thought-machine/please/releases/download/v17.4.0/please_17.4.0_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:68aa1cb8ee3b87931ebca838cf6aa41227eb531774d235ecb577887bbe10eaab
+    # https://github.com/thought-machine/please/releases/download/v17.4.0/please_17.4.0_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:d70f42519123b8e39a9c83352ccb942a3bb458524d43066401f777bad61ed9a4
+    # https://github.com/thought-machine/please/releases/download/v17.4.0/please_17.4.0_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:3e579d6b4794b0d745b740d56cc713c2c600d176b1fe9d0f9d2418c65e481764
+  '17.4.1':
+    # https://github.com/thought-machine/please/releases/download/v17.4.1/please_17.4.1_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:54c46a786d64b68730efbe80b49cff09f4822f558243afbde3f2a4779c0717f7
+    # https://github.com/thought-machine/please/releases/download/v17.4.1/please_17.4.1_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:9505ee53aacd334f5b855c668ba1af5a2fdc96fd63424fec9fcb8feacc38859a
+    # https://github.com/thought-machine/please/releases/download/v17.4.1/please_17.4.1_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:4ae5289228948fa278136d9bdf241a30056bc9583575d2764679099805e6021d
+    # https://github.com/thought-machine/please/releases/download/v17.4.1/please_17.4.1_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:4447f76ad28eaf8d3cb52c2574baeb0172660709296f9cc4593c8269507b2f39
+  '17.4.2':
+    # https://github.com/thought-machine/please/releases/download/v17.4.2/please_17.4.2_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:4744aca676e163a9599ef0d9fee07132786c2f0dc4c3f43c7809e85440332085
+    # https://github.com/thought-machine/please/releases/download/v17.4.2/please_17.4.2_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:f1794eb4aaeab5cf90433373a9afed35e810548474a83a9894620d0c7b12de68
+    # https://github.com/thought-machine/please/releases/download/v17.4.2/please_17.4.2_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:4f40772a7db8a46dfa76d74afa885cbbdecdb30e35dc0d52ee8ed0c347673f30
+    # https://github.com/thought-machine/please/releases/download/v17.4.2/please_17.4.2_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:df895828f32c3100bf822950a00559f7d6986c2fdfd0226379b74ef1fad3bcf3
+  '17.4.3':
+    # https://github.com/thought-machine/please/releases/download/v17.4.3/please_17.4.3_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:86a811807f191c56fd85af33faf8ae9c6f3a8c282f46161ab920359fca4c5c2a
+    # https://github.com/thought-machine/please/releases/download/v17.4.3/please_17.4.3_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:a3ef3283b5f8f7d00b484271681258b08a8796d02d93bd1502bc95f96823f6e6
+    # https://github.com/thought-machine/please/releases/download/v17.4.3/please_17.4.3_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:23c7b130a519c25e82c04590b2988d0261e55d7bde1190d4a1f1da7927599a69
+    # https://github.com/thought-machine/please/releases/download/v17.4.3/please_17.4.3_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:6e8246fa838db2339372c2bd310fc5f8106fe2317acdf19b5b99f97c30143d7d
+  '17.5.0':
+    # https://github.com/thought-machine/please/releases/download/v17.5.0/please_17.5.0_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:830bc632f242585399a2cf7005124cf903e319a41c510f8f3203cdf6d8746cc8
+    # https://github.com/thought-machine/please/releases/download/v17.5.0/please_17.5.0_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:8e6f3af160f0841b90f337afef057f89856c73b7758ec5974767c9195ec66f31
+    # https://github.com/thought-machine/please/releases/download/v17.5.0/please_17.5.0_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:825f1d468e68d3753ce55cc04289e35e21160a0ceaa647477c65c9834b50b1c7
+    # https://github.com/thought-machine/please/releases/download/v17.5.0/please_17.5.0_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:8d3fc885a1957700713cea6809b2d3a81869e4fe63b9817aeddfbd63d4fc6194
+  '17.6.0':
+    # https://github.com/thought-machine/please/releases/download/v17.6.0/please_17.6.0_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:6d034f7980f259a63df44ac128f3327360a29d554bfddc3aaff833323dec5908
+    # https://github.com/thought-machine/please/releases/download/v17.6.0/please_17.6.0_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:e19bfea96ead61628b3b63921ecf970c537db8ab918b70432ce9d6a801d8521e
+    # https://github.com/thought-machine/please/releases/download/v17.6.0/please_17.6.0_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:282969c7b6d7dc154382fb730d4dffa79f6829b62d2f32b405fc3daffa3161e2
+    # https://github.com/thought-machine/please/releases/download/v17.6.0/please_17.6.0_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:cc002f14138e3eb4ace293ae7e9de09b22e766ab8da4b848c17b15e8c61072ee
+  '17.6.1':
+    # https://github.com/thought-machine/please/releases/download/v17.6.1/please_17.6.1_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:7a1a3af27c4ce99dab6b7d70bb09a9ba83fc4ae033cf1f01e42a06824679c8e8
+    # https://github.com/thought-machine/please/releases/download/v17.6.1/please_17.6.1_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:ee4c5f690e299d892d3f0ee864e030d6de6b9254ee16ca3f72d4790624ddf5d3
+    # https://github.com/thought-machine/please/releases/download/v17.6.1/please_17.6.1_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:83bb8e42d804149e2b77b906ae93f5986bcf7a5887814f3b33064edef5506a0f
+    # https://github.com/thought-machine/please/releases/download/v17.6.1/please_17.6.1_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:ed0d51100349f1c53b9cdf09483cf1598b6dfa9888b175eb9d9aa724c06fa7e7
+  '17.6.2':
+    # https://github.com/thought-machine/please/releases/download/v17.6.2/please_17.6.2_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:d790b33e9bd97b24f0de4c9fa427070d3e9d3140f51bdcaa44b262ed9ca02133
+    # https://github.com/thought-machine/please/releases/download/v17.6.2/please_17.6.2_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:20bd87ae2dde61985ce30630d415d918ee5e5d533d2ee35c3a402226505fb56d
+    # https://github.com/thought-machine/please/releases/download/v17.6.2/please_17.6.2_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:bb59fe9eb0ab6427c49b8ea53957cb27bcee284f035f16864eef34338974c2fe
+    # https://github.com/thought-machine/please/releases/download/v17.6.2/please_17.6.2_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:dc791e1137ea90d3c21468892a5fda161ade5bcea5dd9d7e7adf1149257ba399
+  '17.7.0':
+    # https://github.com/thought-machine/please/releases/download/v17.7.0/please_17.7.0_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:100bc854dae65a20ff526e2d625aa2359a63cc7ed7f8c7c2b6a4badd5eff332e
+    # https://github.com/thought-machine/please/releases/download/v17.7.0/please_17.7.0_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:d762b08f7ab0649db1e13115346b801b75815fa24b54d964432916f150496563
+    # https://github.com/thought-machine/please/releases/download/v17.7.0/please_17.7.0_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:5fc591f29e7eb223b7c482d63c997a46453ff54747dd8a0e808a7c747a6d9123
+    # https://github.com/thought-machine/please/releases/download/v17.7.0/please_17.7.0_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:3dbd32104c38c84fd4a8a303fcdf49056ba2f2b22bbb168aa04041d999e40b7e
+  '17.8.0':
+    # https://github.com/thought-machine/please/releases/download/v17.8.0/please_17.8.0_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:7864ce327fa28c9b9882edaae6cdee598abe23092c0bc0799378754811d191e5
+    # https://github.com/thought-machine/please/releases/download/v17.8.0/please_17.8.0_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:330a77ddbc28812e0d66c548808deba198065294a26a0aced6c825f987dd1871
+    # https://github.com/thought-machine/please/releases/download/v17.8.0/please_17.8.0_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:d7672e308f496ff366c71774fc5dd48eff04d3be38e2e1e05c613d0967d6b177
+    # https://github.com/thought-machine/please/releases/download/v17.8.0/please_17.8.0_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:d272928345e92c57f55c6c36ecc4992824362f135a75cd1700fb95402fa6b148
+  '17.8.1':
+    # https://github.com/thought-machine/please/releases/download/v17.8.1/please_17.8.1_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:9c528d9fde0cf7010cb9d12897b75db7cbf696ef7659212034a91d99fc813ef9
+    # https://github.com/thought-machine/please/releases/download/v17.8.1/please_17.8.1_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:5b7f484492d675f52efc0dab1ce3b675824f4e27d4065481b37a571e9539b292
+    # https://github.com/thought-machine/please/releases/download/v17.8.1/please_17.8.1_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:e5b37324762e6de0fe16471b237aa03d0675058f2dee27725f1e62a818be32bf
+    # https://github.com/thought-machine/please/releases/download/v17.8.1/please_17.8.1_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:3e6cd7c336baddcd2017a65d674a7bdf0080e38755d8d7bf7aa2165cfe4a23aa
+  '17.8.2':
+    # https://github.com/thought-machine/please/releases/download/v17.8.2/please_17.8.2_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:401ec56ee36e9f6ffe18ce3ca836b9da3f41607d26cd0f565ba4630f36aba545
+    # https://github.com/thought-machine/please/releases/download/v17.8.2/please_17.8.2_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:ebcf849b7279f5f27f06dff61196ec297e0a8b14815f5fe9c449e3709fd3265a
+    # https://github.com/thought-machine/please/releases/download/v17.8.2/please_17.8.2_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:c6816d46ca382f9f9dd8429eaf2a1d17e649c629a9f404218e9dac10fe0129e8
+    # https://github.com/thought-machine/please/releases/download/v17.8.2/please_17.8.2_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:b24b7cfe400288f0dcc5fedf9c2c6d5179dc8f9958676846fe2ee81a5d2e6e38
+  '17.8.3':
+    # https://github.com/thought-machine/please/releases/download/v17.8.3/please_17.8.3_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:2b31948e2ca09fefa4814b68ce4599f403a120a9b31294eeffd55f50b2257f8d
+    # https://github.com/thought-machine/please/releases/download/v17.8.3/please_17.8.3_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:480ee034bfb4007e4a0db5aba3a155e7919920585966818dd8d5d6a77b321636
+    # https://github.com/thought-machine/please/releases/download/v17.8.3/please_17.8.3_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:477b8ea7ee83bf6658579b41dca17cbf7291b00bd60b15308013839967862f59
+    # https://github.com/thought-machine/please/releases/download/v17.8.3/please_17.8.3_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:597b5d921aa0aaff52bb8730a09b1a42da0c335d6d002c7fb0bff090a3101685
+  '17.8.4':
+    # https://github.com/thought-machine/please/releases/download/v17.8.4/please_17.8.4_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:a1b156e98e676b82bc07d5818feabf8c7085f46f6567f3105e065cd2a7f9b3b9
+    # https://github.com/thought-machine/please/releases/download/v17.8.4/please_17.8.4_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:c922e4366abdb06b6e3911544e380853577595bc5bdb665b072b264420e78cc5
+    # https://github.com/thought-machine/please/releases/download/v17.8.4/please_17.8.4_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:b7c95fadb9f1ab9ccbc668e6e0aeade2db43d30eb7928f49f9ca5dd5612eb478
+    # https://github.com/thought-machine/please/releases/download/v17.8.4/please_17.8.4_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:ba49c1063cc4083543bca0b6e9a10c4d03bcf7ab8578d2335192842e841cf04e
+  '17.8.5':
+    # https://github.com/thought-machine/please/releases/download/v17.8.5/please_17.8.5_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:edc1b0890741acdf2ed1c909e46dd9b85592572a32e9a2607828fffd244b1eca
+    # https://github.com/thought-machine/please/releases/download/v17.8.5/please_17.8.5_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:73bf33002fa0e519c43c73aa46c3aecaea2717add19a82ab8a56c567eaebcda3
+    # https://github.com/thought-machine/please/releases/download/v17.8.5/please_17.8.5_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:7d0e43c26a5fa85d79c7a998752410a1a2c642326177b9ee57ed1b412d9e46ba
+    # https://github.com/thought-machine/please/releases/download/v17.8.5/please_17.8.5_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:26bd60951ea8de6d254c300233360497f722d7b0e78f61e1b688bb584d5dabe2
+  '17.8.6':
+    # https://github.com/thought-machine/please/releases/download/v17.8.6/please_17.8.6_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:2a4562226a030be234801cd55cb42214b6437d62337e3daa4e8817f77376a145
+    # https://github.com/thought-machine/please/releases/download/v17.8.6/please_17.8.6_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:0a911f2efff5f8cf37f7c0ddfd21b209723478f3a7a20a02a9049140d702b9ad
+    # https://github.com/thought-machine/please/releases/download/v17.8.6/please_17.8.6_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:b01ec7e6c119d6252b8b1307d2dce6c4578e3c7fa3e1a6b14af5ca70606d4845
+    # https://github.com/thought-machine/please/releases/download/v17.8.6/please_17.8.6_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:c11710d02e5332617374657ed63cb73994b000301532f1e70a4a7900de8372c1
+  '17.8.7':
+    # https://github.com/thought-machine/please/releases/download/v17.8.7/please_17.8.7_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:3cd57b3ba5b801e472d697cd20c003aea931fdb36481f8b154a3b2f77c7e976f
+    # https://github.com/thought-machine/please/releases/download/v17.8.7/please_17.8.7_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:baa2b9d573211757f226f0daeb12d04c1c4798e4ebcfa21a9ab7f4bd2717de3a
+    # https://github.com/thought-machine/please/releases/download/v17.8.7/please_17.8.7_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:15a7990ace1aa4b71bfeb80ab2b540983df4cb308485327041b05d44e7c3a230
+    # https://github.com/thought-machine/please/releases/download/v17.8.7/please_17.8.7_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:2fa2308ffe57a64a1bbdd5f531de1ffde2751d75f0e778c0f71b4bb7eeee9222
+  '17.9.0':
+    # https://github.com/thought-machine/please/releases/download/v17.9.0/please_17.9.0_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:449ad15f2c5e0deefe6816f94f6e87811beece0d9a7224cd02466dfa2d2e149a
+    # https://github.com/thought-machine/please/releases/download/v17.9.0/please_17.9.0_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:c45f901be36c8137dcfadab4b05e455049fb8a206827f6bb5254dc368099ca00
+    # https://github.com/thought-machine/please/releases/download/v17.9.0/please_17.9.0_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:524322e90ba26c94df0af72d4532bf9b07e573f4c9eec22c0f9e7c3a1d2aff12
+    # https://github.com/thought-machine/please/releases/download/v17.9.0/please_17.9.0_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:71b8ae36f963dfccb7feeb34ffc94ebc638b3793c342d9cb3e5ce9a12a64022c
+  '17.10.0':
+    # https://github.com/thought-machine/please/releases/download/v17.10.0/please_17.10.0_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:184bb552ce30f90b4dd7673ce6b1ae2c7dc3645a506d9f1fef2a8d31bf137a29
+    # https://github.com/thought-machine/please/releases/download/v17.10.0/please_17.10.0_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:3c1349e8e4cc8455b3d8074392b986d86768f2c28eb60ee7b869f764ab7d6b92
+    # https://github.com/thought-machine/please/releases/download/v17.10.0/please_17.10.0_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:03246fcc53335973d7cd7279e4862bdfa076c09d201453c790231244d1f89410
+    # https://github.com/thought-machine/please/releases/download/v17.10.0/please_17.10.0_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:4d0c821fa5780b704afc8a25c587d8015c0f0dfd97c300aba5496e41567da9e3
+  '17.10.1':
+    # https://github.com/thought-machine/please/releases/download/v17.10.1/please_17.10.1_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:66c4a45960ca2a99d0301b6cf97030768d6cd2969547f66fd6f1ce376bb9a53f
+    # https://github.com/thought-machine/please/releases/download/v17.10.1/please_17.10.1_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:8dd032cad941328cc6f2596310bef7d4816f0bdae1ad08dbc84d954f5e41f863
+    # https://github.com/thought-machine/please/releases/download/v17.10.1/please_17.10.1_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:e1da39b3878744535081892a7735f293b1cc7637b9af98388e607cc3304310b9
+    # https://github.com/thought-machine/please/releases/download/v17.10.1/please_17.10.1_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:6f762d98ee21156e26f58d30382029d2b694ab1ee8b6927f0c627bd0ba705c74
+  '17.10.2':
+    # https://github.com/thought-machine/please/releases/download/v17.10.2/please_17.10.2_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:d2336f30bb69516e871d291da06f96e6a6caf1c06855c5c12fec4ffb3b5c7142
+    # https://github.com/thought-machine/please/releases/download/v17.10.2/please_17.10.2_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:b97129062f8c86c8e19eb33d07ff80492f496cee737bc4bedf02554213102385
+    # https://github.com/thought-machine/please/releases/download/v17.10.2/please_17.10.2_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:06e156cf3e5a73a058097b0d44f685b97bc235552c4aebf0e279d0437c44590c
+    # https://github.com/thought-machine/please/releases/download/v17.10.2/please_17.10.2_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:864868cc8c80135784696d1d80a2ab2eed71d17e7936e4ad50b976d20d42ffdf
+  '17.10.3':
+    # https://github.com/thought-machine/please/releases/download/v17.10.3/please_17.10.3_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:1d912fb53ce7dd4d5419307d9d72e3917db5f0f6d059b350fc373184d4f48112
+    # https://github.com/thought-machine/please/releases/download/v17.10.3/please_17.10.3_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:bd8eed77e1b2ed19a929d1093b125093cbbfc5517116362f4daf5dfa7104a42a
+    # https://github.com/thought-machine/please/releases/download/v17.10.3/please_17.10.3_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:0f58af6627bc2e3c7e073429adbc5f368ab4bf01b941e98f35804bee99402b89
+    # https://github.com/thought-machine/please/releases/download/v17.10.3/please_17.10.3_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:1cc289cb54be85c1085d1f4a0c9bb5689303dcd05c7681490fe6fd94d8f9aa81
+  '17.11.0':
+    # https://github.com/thought-machine/please/releases/download/v17.11.0/please_17.11.0_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:6994c34df70b25440d1ee4497f43c9b0d3efad17565f57e9e3dc3d8ee25c9074
+    # https://github.com/thought-machine/please/releases/download/v17.11.0/please_17.11.0_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:0a0aeac3be82c080825254cf2f62e3b845004bff0f2122ef7fde5229c4bb81a3
+    # https://github.com/thought-machine/please/releases/download/v17.11.0/please_17.11.0_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:0c7ee311b1835c60e98662574f917defe8600ea9bc4618cdf247fdc1fe41ef11
+    # https://github.com/thought-machine/please/releases/download/v17.11.0/please_17.11.0_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:cc3f4e2297e3f43165dab873c111c06eabe2042f987848605bddcaf6bb41abe0
+  '17.12.0':
+    # https://github.com/thought-machine/please/releases/download/v17.12.0/please_17.12.0_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:b2cbe8cd91f7b3ac9a1e6eec6936046a57bdaf0142a43b020e691a46324e148e
+    # https://github.com/thought-machine/please/releases/download/v17.12.0/please_17.12.0_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:9fbc51e087076eabe3da589cd80c57d63f0ed1f397495b5ba89279881c478370
+    # https://github.com/thought-machine/please/releases/download/v17.12.0/please_17.12.0_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:f771d718f4d88a1915337659c8f406cdf97625df879368e9d06f0727af9ec2b6
+    # https://github.com/thought-machine/please/releases/download/v17.12.0/please_17.12.0_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:96ff2c620f95ca4afd8d644d948e04c001da990abb519f27cb4b2c281b0bad20
+  '17.12.1':
+    # https://github.com/thought-machine/please/releases/download/v17.12.1/please_17.12.1_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:f13783f2a818e1a3f29ca68a4cf94149bf26c9be8f59ac137e82a2312d40b70a
+    # https://github.com/thought-machine/please/releases/download/v17.12.1/please_17.12.1_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:68b6811e6bd6f0c12a1ef5cb08645a9d142963cb16af6cd008aa6fbb0ef62642
+    # https://github.com/thought-machine/please/releases/download/v17.12.1/please_17.12.1_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:ffa436a0fb4fe5f57d7f74ae79206bb418c5d8d5681f3d6c0a177077a0308cc9
+    # https://github.com/thought-machine/please/releases/download/v17.12.1/please_17.12.1_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:12cdd551b5437621b51c38c0c3a625608f32c29353461f5e332d109e8b41c15b
+  '17.12.2':
+    # https://github.com/thought-machine/please/releases/download/v17.12.2/please_17.12.2_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:15c0b266873aa37ba99877073730d6a9a550f4ba7f1ee5b0b3c2a7d8e1572aa7
+    # https://github.com/thought-machine/please/releases/download/v17.12.2/please_17.12.2_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:5256e9ed7c24374931c7341fa17f72472d722323c1d9ea41a6bb1c705a0932e1
+    # https://github.com/thought-machine/please/releases/download/v17.12.2/please_17.12.2_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:412d291af3bc7d11ec8350fc952a32e6e2fd8fdf8eb9012eec4c121aba300b77
+    # https://github.com/thought-machine/please/releases/download/v17.12.2/please_17.12.2_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:53943d1647ff699cbec8936a5f15a01c8ee37faeeb301bc38b118fb483063524
+  '17.12.3':
+    # https://github.com/thought-machine/please/releases/download/v17.12.3/please_17.12.3_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:a5f681bc8eb57543126f6afab4de4d368f86b80c5988688b149eec83e1bffd6d
+    # https://github.com/thought-machine/please/releases/download/v17.12.3/please_17.12.3_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:479f2802e9ecaca84798ad70669c79cc84e2631f7c2fda44c772a19e2358e639
+    # https://github.com/thought-machine/please/releases/download/v17.12.3/please_17.12.3_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:ae78788339b7a29599a20f7e60aaacb0f8a22282cfe6f4a1e270bd71ccf9fd02
+    # https://github.com/thought-machine/please/releases/download/v17.12.3/please_17.12.3_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:d7c74de845533e8a972ecc7094868b64cfe7e9f6fd1ebdbeb1625042c0a264be
+  '17.12.4':
+    # https://github.com/thought-machine/please/releases/download/v17.12.4/please_17.12.4_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:1038e83e3ce70c96132f43fea986514b67a68cfe66d0dd8baf60e73212e3ad50
+    # https://github.com/thought-machine/please/releases/download/v17.12.4/please_17.12.4_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:96172f186747b6cfcb810a086e9b53b70c01de0296e35b100789c70a45158836
+    # https://github.com/thought-machine/please/releases/download/v17.12.4/please_17.12.4_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:ab2afd02fe4308cf32de47fcfcfb48cffa94bd405302b9bc23baf7689ac05452
+    # https://github.com/thought-machine/please/releases/download/v17.12.4/please_17.12.4_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:9b8053d95a5b6c2030c6b9a92722c7890f6ed643a590068b9d77a7a03f162b88
+  '17.12.5':
+    # https://github.com/thought-machine/please/releases/download/v17.12.5/please_17.12.5_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:1afa519bce26b55de6a32b09033c3d3b96f55e84bedf46a7b36ea5d110666a78
+    # https://github.com/thought-machine/please/releases/download/v17.12.5/please_17.12.5_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:769fcf80bfda8a04e227bc09a3ec67b5e66fe776caaf0b31001f95116828ce36
+    # https://github.com/thought-machine/please/releases/download/v17.12.5/please_17.12.5_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:5afe0347ca7cb766c6bd2b189c089e7f3d72ebf5c2acd0fcd931b330537a441a
+    # https://github.com/thought-machine/please/releases/download/v17.12.5/please_17.12.5_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:2fadb69daa705934ff7c596627b53282422a96e56725fe6c377525d0859b57f5
+  '17.12.6':
+    # https://github.com/thought-machine/please/releases/download/v17.12.6/please_17.12.6_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:791579c46c7e4a74bf0c36b8b31bf4b1b3cc3c5404c33ed0a8878db216a07951
+    # https://github.com/thought-machine/please/releases/download/v17.12.6/please_17.12.6_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:975013da4b800275b08b499c0574666dcdec89bc5541f086a05f0ae995a1e2d7
+    # https://github.com/thought-machine/please/releases/download/v17.12.6/please_17.12.6_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:c7ad3f168cbd78fe958e315a61dc7c1faae6d68b175df14597c1382710cd6a5c
+    # https://github.com/thought-machine/please/releases/download/v17.12.6/please_17.12.6_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:991fb559f5d35bc7aae4376df02b548d97e8a45fb6e25a1365116c6b03335952
+  '17.12.7':
+    # https://github.com/thought-machine/please/releases/download/v17.12.7/please_17.12.7_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:53a8c524e4c4fcacb00bfcbc65942021a5b3f1d8f56889522ee7786e5b960ad2
+    # https://github.com/thought-machine/please/releases/download/v17.12.7/please_17.12.7_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:9df095a2cf3e4e5a7080eb499cd6063d47e468b1ff2311070ecae29b019239a9
+    # https://github.com/thought-machine/please/releases/download/v17.12.7/please_17.12.7_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:e8b10d01dbe4a19a31d8fa8fb65711310c2c2aaf2aa08bebafdea62fce7ae41f
+    # https://github.com/thought-machine/please/releases/download/v17.12.7/please_17.12.7_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:fbecdab29071e2041e8fae4b12f192472dfa770886e33ef1868a8e3a78ae5a4c
+  '17.13.0':
+    # https://github.com/thought-machine/please/releases/download/v17.13.0/please_17.13.0_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:f9e8406b416feab1756e7e6951aa39a37d9aeaff55cd272bab40a81df60b2b50
+    # https://github.com/thought-machine/please/releases/download/v17.13.0/please_17.13.0_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:1ac1cf0cd93fe613caf5c4d377524108c72782d96463ad904a8550aaab6e838c
+    # https://github.com/thought-machine/please/releases/download/v17.13.0/please_17.13.0_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:83e912e77016a8c7f8cfaf6c7dab8ad3fc30f298f85bf4b274881e9e9a7c2f1a
+    # https://github.com/thought-machine/please/releases/download/v17.13.0/please_17.13.0_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:a24c27660cff50ff6dd44c2cb91256fdfaf1c98340cbbffd1bdfa8ff33246a06
+  '17.13.1':
+    # https://github.com/thought-machine/please/releases/download/v17.13.1/please_17.13.1_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:aa21ca34e63fa3c34e72006011c3f091fe8668b1a30b532e72f4f91e41a03f05
+    # https://github.com/thought-machine/please/releases/download/v17.13.1/please_17.13.1_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:2aedec52b981bfb6d67b0bd699985a338b67f547cf45a3bad0e2a586c13e1f5b
+    # https://github.com/thought-machine/please/releases/download/v17.13.1/please_17.13.1_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:95b6f6af04fddea140cb96cc5ca51a727d2c71c9a41a7ae3a4d3f474a9a9d088
+    # https://github.com/thought-machine/please/releases/download/v17.13.1/please_17.13.1_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:7c735af04fdc1c56c5c7f4e7e99a32926135d7ea142244da4f78099882968065
+  '17.14.0':
+    # https://github.com/thought-machine/please/releases/download/v17.14.0/please_17.14.0_darwin_amd64.tar.gz.sha256
+    darwin_amd64: sha256:dedda7a48ea021c1a10fef4cb7d8e3b02177f59879df0b3b2292a917ed20fff4
+    # https://github.com/thought-machine/please/releases/download/v17.14.0/please_17.14.0_darwin_arm64.tar.gz.sha256
+    darwin_arm64: sha256:fd030f1d28149365c5c096bc80e08fb7770c8625b04368b8e5d15b4ff71c5bb6
+    # https://github.com/thought-machine/please/releases/download/v17.14.0/please_17.14.0_freebsd_amd64.tar.gz.sha256
+    freebsd_amd64: sha256:2a2aa0342dba80e78e7fbe3da830fd526b29776a1614f8427e69044bef60514b
+    # https://github.com/thought-machine/please/releases/download/v17.14.0/please_17.14.0_linux_amd64.tar.gz.sha256
+    linux_amd64: sha256:6475f1db50f109104bc3aaaca7ff91c802845f822bacf02e159c9d8776aa520a

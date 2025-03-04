@@ -1,10 +1,13 @@
 ---
-- hosts: all
+- name: Testing andrewrothstein.please
+  hosts: all
   roles:
     - role: '{{ playbook_dir }}'
   tasks:
-    - command: /usr/local/please/please --version
+    - name: Executing 'please --version'
+      ansible.builtin.command: sh -lc 'please --version'
+      changed_when: false
       register: please_test_output
-    - name: please --version
-      debug:
+    - name: Output from 'please --version'
+      ansible.builtin.debug:
         msg: '{{ please_test_output.stdout }}'
